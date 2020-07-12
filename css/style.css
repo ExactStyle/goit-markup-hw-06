@@ -391,6 +391,181 @@ address {
   background-color: var(--white-color);
 }
 
+/* Form */
+.form {
+  position: absolute;
+  top: 221px;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.form p {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-bold-color);
+  margin-bottom: 30px;
+}
+
+.form-field {
+  position: relative;
+
+  margin-bottom: 28px;
+}
+
+.form-label {
+  position: absolute;
+  left: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-form-name,
+.icon-form-phone,
+.icon-form-mail {
+  position: absolute;
+  left: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button-form-close {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+}
+.button-form-close:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.icon-form-close {
+  fill: var(--accent-color);
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.form-input {
+  width: 448px;
+  height: 40px;
+
+  padding-left: 42px;
+}
+
+.form-textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.form-input,
+.form-textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-legacy {
+  line-height: 1.71;
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+.icon {
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid black;
+  border-radius: 4px;
+  position: absolute;
+
+  left: 52px;
+  transform: translateY(30%);
+}
+
+.checkbox:checked + .icon {
+  background-color: var(--accent-color);
+  background-image: url("../images/svg/form_check.svg");
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+
+.form-legacy-label {
+  margin-left: 33px;
+}
+
+.form-legacy a {
+  color: var(--accent-color);
+}
+
+.form-button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+
+  border-radius: 4px;
+  border-width: 0px;
+  transform: translateX(60%);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateX(-25px) translateY(-40px);
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.form-input:focus ~ .icon-form-name,
+.form-input:focus ~ .icon-form-phone,
+.form-input:focus ~ .icon-form-mail {
+  fill: var(--accent-color);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 /* Особенности веб студии */
 .features .item {
   width: 270px;
